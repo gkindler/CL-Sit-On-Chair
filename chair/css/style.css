@@ -1,0 +1,473 @@
+/* GENERAL */
+* {
+  font-family: Arial, sans-serif;
+}
+
+header, section, footer {
+  width: 100%;
+  display: block;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.col {
+  float: left;
+}
+
+
+/* HEADER */
+header {
+  background: #000;
+  color: #fff;
+  padding: 10px;
+}
+header nav.col {
+  float: right;
+}
+header nav.col li {
+  display: inline-block;
+  padding: 0 20px;
+}
+header nav.col a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+header p.col {
+  text-transform: uppercase;
+}
+
+header span {
+  font-weight: bold;
+  color: #2FCCA8;
+}
+
+/* SECTION 1 */
+
+body > section:first-of-type {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 50%, #f6f6f6 51%, #eeeeee 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 50%,#f6f6f6 51%,#eeeeee 100%);
+  background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 50%,#f6f6f6 51%,#eeeeee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
+}
+
+body > section:first-of-type .row {
+  margin-top: -40px;
+}
+
+body > section:first-of-type .colChair {
+  float: left;
+  width: 40%;
+  text-align: center;
+}
+
+body > section:first-of-type .colText {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-right: 100px;
+}
+
+body > section:first-of-type .colText .loremText {
+  font-size: 0.75rem;
+  padding: 15px 0;
+}
+
+body > section:first-of-type span {
+  font-weight: bold;
+  color: #2FCCA8;
+}
+
+section .left-arrow {
+  float: left;
+  width: 5%;
+  font-size: 50px;
+  padding-top: 90px;
+  color: #2FCCA8;
+}
+
+section .right-arrow {
+  float: left;
+  width: 5%;
+  font-size: 50px;
+  padding-top: 90px;
+  color: #2FCCA8;
+}
+
+section .container .row h1 {
+  text-transform: uppercase;
+  padding-top: 40px;
+  font-size: 1.5rem;
+}
+
+section .container .row .seemore {
+  margin: 0 auto;
+  width: 50%;
+  background: #2FCCA8;
+  border-radius: 10px;
+  padding: 5px 0;
+}
+
+section .container .row .seemoreText {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.list {
+  width: 100px;
+  height: 80px;
+  background: black;
+  position: relative;
+  top: 30px;
+  left: 558px;
+}
+
+.list li {
+  color: #fff;
+  margin: 0 8px;
+}
+.list li p {
+  margin-top: 3px;
+  font-size: 15px;
+}
+.list .arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  background: #fff;
+  border-bottom: 5px solid black;
+  position: relative;
+  top: -5px;
+  left: 43px;
+}
+
+
+/* SECTION 2 */
+
+section:nth-of-type(2) {
+  background: #fff;
+  padding-bottom: 50px;
+}
+
+section:nth-of-type(2) .image {
+  width: 32%;
+  float: left;
+  margin-right: 1.33%;
+  position: relative;
+}
+
+section:nth-of-type(2) .image .whiteBar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 20px;
+}
+
+section:nth-of-type(2) .image .whiteBar h4 {
+  width: 50%;
+  box-shadow: 0 5px 0 0 #2FCCA8;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+section:nth-of-type(2) .sec2Text {
+  width: 32%;
+  float: left;
+  margin-right: 1.33%;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 25px 15px;
+}
+
+section:nth-of-type(2) .sec2Text h4 {
+  width: 50%;
+  box-shadow: 0 5px 0 0 #2FCCA8;
+  margin-bottom: 5px;
+}
+
+section:nth-of-type(2) .sec2Text p {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+}
+
+/* SECTION 3 */
+section:nth-of-type(3) {
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+section:nth-of-type(3) h3 {
+  width: 30%;
+  box-shadow: 0 5px 0 0 #2FCCA8;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+section:nth-of-type(3) h1 {
+  color: #2FCCA8;
+  text-transform: uppercase;
+}
+.box, .box2 {
+  height: 430px;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  width: 31%;
+  position: relative;
+  margin-top: 50px;
+}
+.box2 {
+  margin: 0 28px;
+  margin-top: 50px;
+}
+.box-header {
+  text-align: center;
+  padding: 20px;
+}
+.priceCircle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  position: relative;
+  left: 88px;
+}
+.bigPrice, .littlePrice, .PLN {
+  color: rgba(0, 0, 0, 0.25)
+}
+.bigPrice {
+  font-size: 30px;
+  font-weight: 900;
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+.littlePrice {
+  font-size: 10px;
+  position: relative;
+  top: -10px;
+  left: 60px;
+}
+.PLN {
+  font-size: 15px;
+  position: relative;
+  top: 20px;
+  left: 15px;
+}
+
+.littleEmptyCircle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: -35px;
+  right: 114px;
+}
+
+.fullCircle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.15);;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.services1,
+.services2,
+.services3 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.services1 {
+  margin-bottom: 90px;
+}
+.services2 {
+  margin-bottom: 60px;
+}
+.servicesDelivery {
+  font-size: 20px;
+  text-align: center;
+  height: 30px;
+  background: #E3E3E3;
+  color: rgba(0, 0, 0, 0.25);
+  padding-top: 5px;
+}
+.servicesService {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  height: 30px;
+  background-color: #F1F1F1;
+  padding-top: 5px;
+}
+
+.box-rectangle {
+  width: 100px;
+  height: 25px;
+  background-color: #2FCCA8;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.box-button {
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.float-left {
+  float: left;
+}
+.box2:hover,
+.box2:hover .littleEmptyCircle {
+  background-color: #2FCCA8;
+  border: 1px solid #2FCCA8;
+}
+.box2:hover .services2 {
+  border: 1px solid #2FCCA8;
+}
+
+.box2:hover h1 {
+  color: #fff;
+}
+.box2:hover .fullCircle {
+  background-color: #fff;
+}
+.box2:hover .priceCircle {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.box2:hover .bigPrice,
+.box2:hover .littlePrice,
+.box2:hover .PLN {
+  color: #2FCCA8;
+}
+.box2:hover .box-button {
+  background: #fff;
+  border-radius: 5px;
+  color: #2FCCA8;
+}
+.box2:hover .servicesService {
+  background: #F1F1F1;
+}
+.box2:hover .servicesDelivery {
+  background: #fff;
+}
+/* SECTION 4 */
+
+section:nth-of-type(4) {
+  background: #fff;
+}
+
+section:nth-of-type(4) h3 {
+  width: 30%;
+  box-shadow: 0 5px 0 0 #2FCCA8;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+section:nth-of-type(4) .formDiv {
+  width: 65%;
+  float: left;
+}
+
+section:nth-of-type(4) .submitDiv {
+  width: 30%;
+  float: left;
+  margin-left: 40px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  border: 1px solid #2FCCA8;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+form textarea {
+  height: 200px;
+  resize: none;
+}
+
+input[name="submit"] {
+  text-transform: uppercase;
+  background: #2FCCA8;
+  color: white;
+  border-radius: 5px;
+}
+
+.checkbox {
+  height: 40px;
+  margin: 0 0;
+  float: left;
+  width: 15%;
+  border: 1px solid #2FCCA8;
+  margin-bottom: 10%;
+}
+.checkbox img {
+  margin-top: 5px;
+}
+
+.submitDiv .agree {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.25);
+  margin: 10% 0;
+}
+
+.submitDiv p {
+  float: left;
+  width: 80%;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+form ::placeholder {
+  font-size: 1.5rem;
+}
+
+/* FOOTER */
+.copyright {
+  float: left;
+  font-size: 0.75rem;
+}
+.logo, .text {
+  float: right;
+  text-transform: uppercase;
+}
+.logo li {
+  display: inline-block;
+}
+.text {
+  padding-top: 16px;
+  padding-left: 30px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.copyright {
+  padding-top: 21px;
+  color: rgba(0, 0, 0, 0.5);
+}
