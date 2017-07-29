@@ -1,1 +1,0 @@
-# CL-Sit-On-Chair
